@@ -10,7 +10,8 @@
     <meta name="description" content="Reservia, en plein centre de ville ou en pleine nature, rechercher le meilleur hébergement pour des vacances de rêve.
      Projet par OpenClassrooms">
 
-     <script src="https://kit.fontawesome.com/3a8e69eee8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3a8e69eee8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
 
 
 </head>
@@ -24,13 +25,22 @@
     </nav>
     <a class="headerSignup" href="#">S'inscrire</a>
   </header>
-  <!-- HEADER -->
+
+  <!-- MAIN représente le contenu majoritaire du <body> du document -->
+  <main class="main">
 
   <!-- BARRE DE RECHERCHE -->
-  <section class="search">
-    <header class="searchHeader">
-        <h1 class="searchHeaderTitle">Trouvez votre hébérgement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en plein nature</p>
-</header>
+  <section id="recherche">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+      <form class="searchArea">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="search" placeholder="Marseille, France" class="searchArea__text">
+        <button type="button" class="searchArea__btn">
+            
+            <span>Rechercher</span>
+        </button>
+      </form>
+ </main>
 </body>
 </html>
