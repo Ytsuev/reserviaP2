@@ -10,6 +10,7 @@
     <meta name="description" content="Reservia, en plein centre de ville ou en pleine nature, rechercher le meilleur hébergement pour des vacances de rêve.
      Projet par OpenClassrooms">
 
+    
     <script src="https://kit.fontawesome.com/3a8e69eee8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
 
@@ -17,13 +18,13 @@
 </head>
 <body>
     <!-- HEADER -->
-  <header class="header">
-    <img class="headerImg" src="./images/logo/Reservia.svg" alt="Reservia">
-    <nav class="headerNav">
-      <a class="headerNavLink" href="#hosting">Hébergement</a>
-      <a class="headerNavLink" href="#activity">Activités</a>
-    </nav>
-    <a class="headerSignup" href="#">S'inscrire</a>
+    <header class="pageHead">
+      <img class="pageHead__logo" src="./assets/img/reservia_logo.svg" alt="logo Reservia">
+      <nav class="pageHead__nav">
+          <a class="pageHead__navItem" href="#hebergement">Hébergements</a>
+          <a class="pageHead__navItem" href="#activites">Activités</a>
+      </nav>
+      <a class="pageHead__itemRegister" href="#">S'inscrire</a>
   </header>
 
   <!-- MAIN représente le contenu majoritaire du <body> du document -->
@@ -77,26 +78,26 @@
    <section class="hosting" id="hosting">
     <div class="heberg">
         <h2>Hébergements à Marseille</h2>
-        <a href="#">Afficher plus</a>
-        <article class="hostingMainCard">
-            <a href="#">
-              <figure class="hostingMainCardFigure">
-                <img 
-                  class="hostingMainCardFigureImg"
-                  src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
-                >
-                <figcaption class="hostingMainCardFigureCaption">
-                  <h3 class="hostingMainCardFigureCaptionTitle">Auberge la Cannebière</h3>
-                </figcaption>
-              </figure>
-              <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">25€</strong></p>
-              <div class="hostingMainCardGrade">
-                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+
+    <article class="hostingMainCard">
+        <a href="#">
+            <figure class="hostingMainCardFigure">
+             <img 
+                class="hostingMainCardFigureImg"
+                src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+            >
+            <figcaption class="hostingMainCardFigureCaption">
+                <h3 class="hostingMainCardFigureCaptionTitle">Auberge la Cannebière</h3>
+            </figcaption>
+            </figure>
+            <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">25€</strong></p>
+            <div class="hostingMainCardGrade">
+              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
               </div>
             </a>
           </article>
@@ -219,16 +220,19 @@
 
       <a class="hostingMainViewmore" href="#">Afficher plus</a>
       </div>
+    </section>
 
-   <!-- SECOND BLOCK -->
-    <div class="famous">
-        <h2>Les plus populaires</h2>
-        <i class="fas fa-chart-line"></i>
+   <!-- SECOND BLOCK LES PLUS POPULAIRES -->
+   <section class="famous" id="famous">
+    <div class="populaire">
+        <h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
     </div>
-   <!-- 3ème BLOCK -->
+
+   <!-- 3ème BLOCK ACTIVITY A MARSEILLE -->
     <div class="activity">
         <h2>Activités à Marseille</h2>
     </div>
+
 </section>
 
    <!-- FOOTER -->

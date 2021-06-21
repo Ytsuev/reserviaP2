@@ -10,3 +10,32 @@ body {
     padding: 0 2rem;
     box-sizing: border-box;
   }
+  h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    }
+  h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 23px;
+  }
+  h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  p{
+    font-size: 16px;
+    font-weight: normal;
+  }
+  a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 23px;
+  }
